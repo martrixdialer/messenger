@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Martrix Messenger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="logo"><span>M</span> Martrix Messenger</div>
+    <div class="status" id="status">● Conectado</div>
+  </header>
+  <div class="login" id="loginBox">
+    <input id="user" placeholder="Tu nombre (ej. Ana)">
+    <button onclick="entrar()">Entrar al chat</button>
+  </div>
+  <div id="chatBox" style="display:none">
+    <div id="chat"></div>
+    <div class="inputBar">
+      <input id="msg" placeholder="Escribe un mensaje..." onkeydown="if(event.key==='Enter')send()">
+      <button onclick="send()">Enviar</button>
+    </div>
+  </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
